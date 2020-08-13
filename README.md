@@ -29,3 +29,13 @@ Student#teacher, Teacher#students
 
 **Which method(s) did you have to create yourself? Why?**
 Student#full_name, Teacher#tenure?
+
+# Deliverables Part III
+
+- A Student has many Teachers through GradeLevel
+- A Teacher has many Students through GradeLevel
+
+You should have a complete seeds file 
+
+**Answer the following questions:**
+**What changes did you make to your app? Why?**
