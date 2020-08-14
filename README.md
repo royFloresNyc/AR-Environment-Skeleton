@@ -52,6 +52,7 @@ Students and Clubs (after-school clubs)
 
 - A Student can have many Clubs
 - A Club can have many Students
+- A Club belongs to one teacher
 - Student#clubs returns instances of clubs a student belongs to
 - Club#students returns instacnes of students that belong to the club
 - Club#students_in_grade_level returns students (instances) in a given grade level

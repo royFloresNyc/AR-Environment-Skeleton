@@ -1,3 +1,9 @@
+Student.destroy_all;
+Teacher.destroy_all;
+GradeLevel.destroy_all;
+Club.destroy_all;
+StudentClub.destroy_all;
+
 roy = Student.create(first_name: "Roy", last_name: "Flores", grade_level: "eleven")
 tina = Student.create(first_name: "Tina", last_name: "Cooper", grade_level: "twelve")
 amy = Student.create(first_name: "Amy", last_name: "Lopez", grade_level: "eleven")
@@ -21,3 +27,13 @@ GradeLevel.create(student: sam, teacher: mendoza)
 GradeLevel.create(student: roy, teacher: gomez)
 GradeLevel.create(student: jen, teacher: smith)
 GradeLevel.create(student: jen, teacher: gomez)
+
+science_club = Club.create(name: 'Science Club', teacher_id: mendoza.id);
+debate_club = Club.create(name:'Debate Club', teacher_id: smith.id);
+
+jordan_science = StudentClub.create({student_id: jordan.id, club_id: science_club.id})
+roy_science = StudentClub.create({student_id: roy.id, club_id: science_club.id})
+
+roy_debate = StudentClub.create({student_id: roy.id, club_id: debate_club.id})
+amy_debate = StudentClub.create({student_id: amy.id, club_id: debate_club.id})
+
