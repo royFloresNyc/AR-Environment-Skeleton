@@ -44,3 +44,14 @@ You should have a complete seeds file
 - created a joiner table (grade_level)
 - added Student#teachers that uses the joiner table (grade_level) as the source of truth
 - added Teacher#studenst that uses the joiner table (grade_level) as teh source of truth
+- added Teacher#grade_level_teaching that returns all the grade_levels(strings) that a teacher teaches 
+
+# Deliverables Part IV
+
+Students and Clubs (after-school clubs)
+
+- A Student can have many Clubs
+- A Club can have many Students
+- Student#clubs returns instances of clubs a student belongs to
+- Club#students returns instacnes of students that belong to the club
+- Club#stents_in_grade_level returns students (instances) in a given grade level
