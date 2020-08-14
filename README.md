@@ -1,4 +1,4 @@
-## AR-Environment-Skeleton
+# Active Record Practice Project
 
 # Domain: Student-Teacher
 
@@ -39,3 +39,8 @@ You should have a complete seeds file
 
 **Answer the following questions:**
 **What changes did you make to your app? Why?**
+
+- removed teacher column from student table
+- created a joiner table (grade_level)
+- added Student#teachers that uses the joiner table (grade_level) as the source of truth
+- added Teacher#studenst that uses the joiner table (grade_level) as teh source of truth
